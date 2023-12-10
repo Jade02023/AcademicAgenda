@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="enter_grades">Enter Grade</string>
+    <string name="Grades_Entered">Entered Grades:</string>
+    <string name="loading_data_from_local_storage">Loading data from local storage</string>
+</resources>
