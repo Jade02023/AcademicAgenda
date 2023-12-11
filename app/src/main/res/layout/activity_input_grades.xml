@@ -64,6 +64,6 @@
         android:minHeight="48dp"
         android:padding="8dp"
         android:layout_marginRight="0dp"
-        android:inputType="TODO" />
+        android:inputType="" />
 
 </RelativeLayout>

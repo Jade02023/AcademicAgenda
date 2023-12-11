@@ -515,7 +515,7 @@ public abstract class Task {
                     return null;
                 }
             });
-            public void scheduleTask(TaskItem taskItem) {
+            public void scheduleTask(TaskItem, taskItem) {
                 // Use 'this' as the context if this method is called from an Activity
                 Intent intent = new Intent(this, Tasks.TaskAlarmReceiver.class);
                 intent.putExtra("TASK_NAME", taskItem.getTaskName());
@@ -1009,7 +1009,7 @@ public abstract class Task {
 
         @Override
         public int checkPermission(@NonNull String s, int i, int i1) {
-            return 0;
+            return PackageManager.PERMISSION_GRANTED;
         }
 
         @Override

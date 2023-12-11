@@ -39,5 +39,7 @@ dependencies {
     implementation("androidx.core:core-ktx:1.7.0")
     implementation("com.google.android.material:material:1.4.0")
     implementation("com.google.android.gms:play-services-tasks:18.0.2")
+    implementation("androidx.fragment:fragment:1.6.2")
+    implementation("androidx.navigation:navigation-fragment:2.7.5")
 }
 
