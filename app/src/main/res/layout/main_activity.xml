@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/viewCalendarButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/view_calendar1"/>
+    <Button
+        android:id="@+id/showTimePickerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show_time" />
+
+    <Button
+        android:id="@+id/addEventButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_event1"/>
+
+    <Button
+        android:id="@+id/viewGradesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/view_grades1"/>
+
+    <Button
+        android:id="@+id/inputGradesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/input_grades"/>
+
+    <Button
+        android:id="@+id/manageTasksButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/manage_tasks1"/>
+
+    <Button
+        android:id="@id/saveGradesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_grades"/>
+
+
+
+    <EditText
+        android:id="@+id/startTimeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:hint="@string/start_time"
+        android:inputType="none"
+        android:minHeight="48dp"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/endTimeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:focusable="false"
+        android:hint="@string/end_time"
+        android:inputType="none"
+        android:minHeight="48dp"
+        tools:ignore="ObsoleteLayoutParam"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/endTimeEditText"
+        android:layout_marginTop="16dp"
+        android:text="@string/add_event_to_calendar"
+        tools:ignore="ObsoleteLayoutParam" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:context=".InputGradesActivity">
+
+        <EditText
+            android:id="@+id/subjectEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/subject"
+            android:inputType=""
+            android:minHeight="48dp"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/gradeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/subjectEditText"
+            android:layout_marginTop="8dp"
+            android:autofillHints=""
+            android:hint="@string/grade"
+            android:inputType="textCapCharacters"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/addGradeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gradeEditText"
+            android:layout_marginTop="16dp"
+            android:text="@string/add_grade"/>
+
+        <TextView
+            android:id="@+id/gradesTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addGradeButton"
+            android:layout_marginTop="16dp"
+            android:text="@string/entered_grades"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>

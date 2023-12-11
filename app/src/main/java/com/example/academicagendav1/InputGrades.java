@@ -1,5 +1,7 @@
 package com.example.academicagendav1;
 
+import static android.os.Build.VERSION_CODES.R;
+
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
@@ -54,13 +56,13 @@ class InputGradesActivity extends AppCompatActivity {
         String i = "";
         String grade = String.valueOf(gradeEditText.charAt(Integer.parseInt(i)));
 
-        // Validate input (add your validation logic)
+        // Validate input
         if (subject.isEmpty() || grade.isEmpty()) {
             // Show an error message or handle the validation failure
             return;
         }
 
-        // Add the grade using your Grade class (replace with your actual implementation)
+        // Add the grade using Grade class
         Grade inputGrade = new Grade(subject, grade);
 
 
