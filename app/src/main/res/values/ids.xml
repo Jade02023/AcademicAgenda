@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item name="editTextGrade" type="id" />
+    <item name="taskTextView" type="id"/>
+
+    <!-- Button IDs -->
+    <item name="viewCalendarButton" type="id"/>
+    <item name="addEventButton" type="id"/>
+    <item name="viewGradesButton" type="id"/>
+    <item name="inputGradesButton" type="id"/>
+    <item name="manageTasksButton" type="id"/>
+
+    <!-- EditText ID -->
+    <item name="gradesEditText" type="id"/>
+
+    <!-- Button ID -->
+    <item name="saveGradesButton" type="id"/>
 </resources>

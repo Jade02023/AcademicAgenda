@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:layout_alignParentTop="true"
-        app:title=" Enter Grades Here" />
+        app:title="Enter Grades Here" />
 
     <FrameLayout
         android:id="@+id/nav_host_fragment_content_input_grades"
@@ -21,7 +21,9 @@
         android:layout_alignParentStart="true"
         android:layout_marginStart="22dp"
         android:layout_marginTop="29dp"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="22dp">
 
         <EditText
             android:id="@+id/gradeEditText"
@@ -38,10 +40,8 @@
             android:id="@+id/buttonSubmit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/gradeEditText"
             android:layout_marginTop="16dp"
-            android:text="@string/submit_grades"
-            tools:ignore="ObsoleteLayoutParam" />
+            android:text="@string/submit_grades" />
 
         <TextView
             android:id="@+id/textViewEnteredGrades"
@@ -61,9 +61,9 @@
         android:layout_marginEnd="0dp"
         android:autofillHints=""
         android:hint="@string/enter_subject"
-        android:inputType=""
         android:minHeight="48dp"
-        android:padding="8dp" />
-
+        android:padding="8dp"
+        android:layout_marginRight="0dp"
+        android:inputType="TODO" />
 
 </RelativeLayout>
